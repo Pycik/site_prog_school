@@ -1,0 +1,124 @@
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
+.header_box {	
+	width: 100%; 
+	height: 660px;
+	position: relative;
+	display: block;
+	 left: 0;
+    top: 0;
+    box-sizing: border-box;
+	
+}
+.div_video {	
+	display: inline-block;	
+	position: absolute;
+	left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;   
+}
+
+.top_menu {
+	padding-top: 40px;
+}
+.logo_img {
+	display: inline-block;
+}
+.nav_menu {
+	position: absolute;
+	display: inline-block;
+	
+	ul {
+		list-style: none;
+		padding: 0;
+		padding-left: 100px;
+			.menu_open {				
+				 padding-left:0;				 
+				 position: absolute;
+				 margin-top: 5px;	 			
+				 
+				.line {
+					border-top: 3px solid red;
+					display:block;
+					margin-top: 5px;
+					margin-left: 36px;
+					width: 20px;
+				}
+			}
+	}	
+ 	li {
+	 	display: inline-block;
+		padding-left:  30px;	
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #FFF;
+			a {
+				color: #FFF;
+				text-decoration: none;
+					span{
+						position: relative;
+					}
+					span:hover {
+						color: red;
+						transition: 2s;
+					}
+			}
+			a:hover {
+				color: yellow;
+				transition: 3s;
+			}
+
+ 	}
+}
+
+
+.right_contacts_info {
+	display: inline-block;
+	text-align: right;
+	right:0;	
+	float:right;
+	color: #FFF;
+
+	.phones {
+		margin-top: -15px;		
+
+			.number {		
+				color:#E5544D;
+				font-size: 30px;
+			}
+		}
+
+	
+}
+	.cities {
+		text-transform: uppercase;
+		margin-top: 5px;
+
+			ul {
+				padding: 0;
+
+				li {
+					display: inline-block;	
+					a {
+						color: #FFF;
+						text-decoration:none;	
+						font-weight: bold;
+					}
+
+					a:hover {
+						color: red;	
+						transition: 2s;					
+					}
+
+					span {
+						font-size: 9px;
+					}
+				}
+
+  			 }
+}
+
