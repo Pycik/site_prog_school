@@ -45,14 +45,16 @@ html, body {
   padding-left: 0;
   position: absolute;
   margin-top: 5px;
+  z-index: 10;
 }
 
-.nav_menu ul .menu_open .line {
-  border-top: 3px solid red;
+.nav_menu ul .menu_open .line, .nav_menu ul .menu_open .line2 {
+  border-top: 3px solid #E5544D;
   display: block;
   margin-top: 5px;
   margin-left: 36px;
   width: 20px;
+  transition: all 1s;
 }
 
 .nav_menu li {
@@ -70,16 +72,35 @@ html, body {
 
 .nav_menu li a span {
   position: relative;
+  z-index: 10;
 }
 
 .nav_menu li a span:hover {
-  color: red;
+  color: #E5544D;
   transition: 2s;
 }
 
 .nav_menu li a:hover {
   color: yellow;
   transition: 3s;
+}
+
+.menu_open_active .line {
+  transform: rotate(50deg);
+  border-top: 3px solid  #FFF !important;
+  display: block;
+  margin-top: 10px !important;
+  margin-left: 36px;
+  width: 20px;
+}
+
+.menu_open_active .line2 {
+  border-top: 3px solid #FFF !important;
+  transform: rotate(-230deg);
+  display: block;
+  margin-top: -3px !important;
+  margin-left: 36px;
+  width: 20px;
 }
 
 .right_contacts_info {
@@ -137,37 +158,58 @@ html, body {
   background: #E5544D;
 }
 
-.menu_center_click .menu_center {
-  margin-top: 40px;
+.menu_center_click ul {
+  padding: 0;
+  margin-top: 140px;
+  margin-left: -100px;
+}
+
+.menu_center_click ul li {
+  list-style: none;
+  text-align: center;
+  line-height: 50px;
+}
+
+.menu_center_click ul li a {
   color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu_center_click ul li a:hover {
+  color: yellow;
+  transition: 2s;
+}
+
+.main_text_block {
+  margin-top: 60px;
+  width: 720px;
+}
+
+.main_text_block .main_text {
+  position: relative;
+}
+
+.main_text_block .main_text .text1 {
+  position: absolute;
+  margin-top: -12px;
+  color: pink;
+  font-size: 40px;
+  left: 0;
+  top: 0;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.menu_center_click .menu_center .text {
-  margin-left: 50%;
-  font-size: 15px;
-}
-
-.menu_center_click .menu_center a {
-  color: #FFF;
-  text-decoration: none;
-}
-
-.menu_center_click .menu_center .menu_open_click {
+.main_text_block .main_text .text2 {
   position: absolute;
-  margin-top: 10px;
-}
-
-.menu_center_click .menu_center .menu_open_click .line, .menu_center_click .menu_center .menu_open_click .line_2 {
-  transform: rotate(50deg);
-  border-top: 2px solid #FFF;
-  display: block;
-  margin-top: 5px;
-  margin-left: 36px;
-  width: 20px;
-}
-
-.menu_center_click .menu_center .menu_open_click .line_2 {
-  transform: rotate(-230deg);
-  margin-top: -2.5px;
+  margin-bottom: -12px;
+  color: pink;
+  font-size: 40px;
+  right: 0;
+  bottom: 0;
+  font-weight: bold;
+  text-transform: uppercase;
 }
