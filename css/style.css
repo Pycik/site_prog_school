@@ -156,6 +156,7 @@ html, body {
   width: 100%;
   height: 660px;
   background: #E5544D;
+  z-index: 9;
 }
 
 .menu_center_click ul {
@@ -185,7 +186,8 @@ html, body {
 
 .main_text_block {
   margin-top: 60px;
-  width: 720px;
+  width: 725px;
+  float: left;
 }
 
 .main_text_block .main_text {
@@ -212,4 +214,140 @@ html, body {
   bottom: 0;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.main_text_block .main_text .logo {
+  width: 37px;
+  height: 69px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.timer {
+  margin-top: 60px;
+  width: 100%;
+  height: 210px;
+  background: #F5DB24;
+}
+
+.right_form {
+  margin-top: 38px;
+  height: 446px;
+  width: 320px;
+  float: right;
+  position: relative;
+}
+
+.right_form .text_top_form {
+  color: pink;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.right_form .text_center_form {
+  background: #F5DB24;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  padding: 5px;
+  margin-top: -32px;
+  margin-left: 80px;
+}
+
+.right_form .form_input {
+  margin-top: 70px;
+}
+
+.right_form .form_input .name_input {
+  height: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.right_form .form_input .name_input i {
+  position: absolute;
+  margin: 5px;
+  color: #FFF;
+}
+
+.right_form .form_input .name_input input {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  padding: 0 35px;
+  background: transparent;
+  color: #FFF;
+  border: none;
+  border-bottom: 2px solid #FFF;
+}
+
+.right_form .form_input .name_input input::-webkit-input-placeholder {
+  color: #E5544D;
+}
+
+.right_form .form_input .phone_input {
+  height: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.right_form .form_input .phone_input i {
+  position: absolute;
+  margin: 5px;
+  color: #FFF;
+}
+
+.right_form .form_input .phone_input input {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  padding: 0 35px;
+  background: transparent;
+  color: #FFF;
+  border: none;
+  border-bottom: 2px solid #FFF;
+}
+
+.right_form .form_input .phone_input input::-webkit-input-placeholder {
+  color: #E5544D;
+}
+
+.right_form .form_input .text_input {
+  height: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.right_form .form_input .text_input i {
+  position: absolute;
+  margin: 5px;
+  color: #FFF;
+}
+
+.right_form .form_input .text_input textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  padding: 5px 40px;
+  background: transparent;
+  border: none;
+  color: #FFF;
+}
+
+.right_form .form_input .text_input textarea::-webkit-input-placeholder {
+  color: #E5544D;
+}
+
+.right_form .form_input .btn_send_form {
+  height: 70px;
+  width: 100%;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
 }
