@@ -282,6 +282,7 @@ html, body {
   color: #FFF;
   border: none;
   border-bottom: 2px solid #FFF;
+  outline: 0;
 }
 
 .right_form .form_input .name_input input::-webkit-input-placeholder {
@@ -309,6 +310,7 @@ html, body {
   color: #FFF;
   border: none;
   border-bottom: 2px solid #FFF;
+  outline: 0;
 }
 
 .right_form .form_input .phone_input input::-webkit-input-placeholder {
@@ -336,6 +338,7 @@ html, body {
   background: transparent;
   border: none;
   color: #FFF;
+  outline: 0;
 }
 
 .right_form .form_input .text_input textarea::-webkit-input-placeholder {
@@ -350,4 +353,20 @@ html, body {
   font-weight: bold;
   position: absolute;
   bottom: 0;
+}
+
+.main_center_block_info {
+  height: 805px;
+  width: 100%;
+  background: #1D1D29;
+}
+
+.main_center_block_info .header_block {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  margin-top: -32px;
+  margin-left: 250px;
+  border: 32px  solid aqua;
+  transition: 2s;
 }

@@ -293,6 +293,7 @@ html,body {
 					color: #FFF;
 					border: none;
 					border-bottom: 2px solid #FFF;
+					outline:0;	
 				}
 
 				input::-webkit-input-placeholder { 
@@ -323,6 +324,7 @@ html,body {
 					color: #FFF;
 					border: none;
 					border-bottom: 2px solid #FFF;
+					outline:0;	
 				}
 			input::-webkit-input-placeholder { 
 				color: #E5544D; 
@@ -349,7 +351,10 @@ html,body {
 				padding: 5px 40px;
 				background: transparent;
 				border: none;
-				color: #FFF;			
+				color: #FFF;
+				outline:0;
+						
+
 			}
 
 			textarea::-webkit-input-placeholder {
@@ -370,9 +375,24 @@ html,body {
 			
 		}
 	}
-
-
 	
 }
 
+.main_center_block_info {
+	
+	height: 805px;
+	width: 100%;
+	background: #1D1D29;
+
+	.header_block {		
+		width: 600px;
+		height: 300px;
+		position: absolute;
+		margin-top: -32px;
+		margin-left: 250px;
+		border: 32px  solid aqua;
+		transition: 2s;
+
+	}
+}
 
