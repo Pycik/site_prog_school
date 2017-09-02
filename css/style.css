@@ -361,12 +361,122 @@ html, body {
   background: #1D1D29;
 }
 
+.main_center_block_info .text_left_top {
+  color: #FFF;
+  font-size: 36px;
+  position: absolute;
+  text-transform: uppercase;
+  margin-top: 46px;
+  z-index: 1;
+  text-align: right;
+  line-height: 34px;
+}
+
+.main_center_block_info .text_left_top span {
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
 .main_center_block_info .header_block {
   width: 600px;
   height: 300px;
-  position: absolute;
   margin-top: -32px;
   margin-left: 250px;
-  border: 32px  solid aqua;
+  border: 32px  solid #5AB276;
   transition: 2s;
+}
+
+.main_center_block_info .header_block ul {
+  padding: 36px 0 0 190px;
+}
+
+.main_center_block_info .header_block ul li {
+  list-style: none;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.main_center_block_info .header_block ul li:before {
+  height: 22px;
+  width: 22px;
+  border: 2px solid #f5db24;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  margin: 10px 0 0 -36px;
+}
+
+.item {
+  margin-top: 46px;
+}
+
+.item .icons {
+  margin-left: -14px;
+  margin-bottom: 12px;
+}
+
+.item .ico_1 {
+  height: 30px;
+  width: 30px;
+  background: url(../img/sprites.png) 0 0;
+}
+
+.item .ico_2 {
+  height: 30px;
+  width: 44px;
+  background: url(../img/sprites.png) -34px -4px;
+}
+
+.item .ico_3 {
+  height: 30px;
+  width: 36px;
+  background: url(../img/sprites.png) -87px -4px;
+}
+
+.item .ico_4 {
+  height: 30px;
+  width: 32px;
+  background: url(../img/sprites.png) -126px -4px;
+}
+
+.item .ico_5 {
+  height: 30px;
+  width: 30px;
+  background: url(../img/sprites.png) -160px -4px;
+}
+
+.item .ico_6 {
+  height: 30px;
+  width: 32px;
+  background: url(../img/sprites.png) -194px -7px;
+}
+
+.item .ico_7 {
+  height: 30px;
+  width: 25px;
+  background: url(../img/sprites.png) -230px -4px;
+}
+
+.item .content .line {
+  width: 2px;
+  height: 15px;
+  background: #FFF;
+  margin: 10px 0;
+}
+
+.item .content span {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #E5544D;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.item .content .text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #FFF;
 }
