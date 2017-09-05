@@ -522,3 +522,104 @@ html,body {
 		}
 	}
 
+.jun_mid_pro_block {
+	
+	width: 100%;
+	height: 785px;
+	background: #AFAFAF;
+
+		.text_top {
+
+			margin-top: 64px;
+			font-size: 40px;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			line-height: 32px;	
+
+
+			span {
+				font-weight: bold;
+				font-family: 'Rubik Mono One', sans-serif;
+
+			}
+		}
+
+		.icons_developer {
+			margin-top: 66px;
+
+			.space {
+				margin-left: 22px;
+			}
+			.arrow_img {
+				height: 25px;
+				width: 126px;
+				background: url(../img/sprites.png) -2px -41px;
+				position: absolute;
+				top: 50%;
+				right: -28px;
+			}
+		}
+
+		.text_block {
+			.mar_left {
+				margin-left: 24px;
+			}
+
+			.up_section {
+
+			margin-top: 40px; 
+			color: #5BB276;
+			text-transform: uppercase;
+			font-size: 26px;
+
+				.center_block {
+					color: #008AC0;
+
+					.line {
+						background: #008AC0;
+					}
+
+				}
+				.right_block {
+					color: #E5544D;
+
+					.line {
+						background: #E5544D;
+					}
+				}
+
+				.Bold_size {
+
+					font-family: 'Rubik Mono One', sans-serif;					
+				}
+
+				.line {
+
+					width:2px;
+					height: 15px;					
+					margin: 5px 0;
+					background: #5BB276;
+				}
+			}
+
+			.down_section {
+
+				margin-top:15px;
+				font-size: 20px;
+
+				.price {
+
+					margin-top:10px;
+					font-size: 30px;
+					font-weight:  bold;
+					line-height: 26px;					
+				}
+			}
+		}
+}
+
+.java_popular {
+	height: 1090px;
+	width: 100%;
+	background: #1D1D29;
+}
