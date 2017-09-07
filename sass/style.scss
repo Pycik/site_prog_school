@@ -622,4 +622,131 @@ html,body {
 	height: 1090px;
 	width: 100%;
 	background: #1D1D29;
+
+	.top_text {
+		margin: 30px 0;
+		color: #FFF;
+		font-size: 36px;
+		text-transform: uppercase;
+
+		span {
+				font-family: 'Rubik Mono One', sans-serif;	
+		}
+	}
+
+	.popular_content {
+		height: 882px;
+		background: url(../img/java-img-title.png) no-repeat;
+		margin-left: 70px;				
+
+			.text_block {
+				text-align: right;
+
+
+				.red_text {
+					color: #E5544D;
+					text-transform: uppercase;
+					font-size: 26px;
+					margin-bottom: 15px;
+
+					span {
+						font-family: 'Rubik Mono One', sans-serif;	
+					}
+					
+				}
+
+				.text_white {
+					color: #FFF;
+					
+				}
+		    }
+		    .text_block.text_left {
+		    	text-align: left;
+		    }
+
+			.center_content {
+
+				margin-top: 285px;
+			}
+
+			.bottom_content {
+				margin-top: 170px;
+				margin-right: -30px;
+			}
+	}
+}
+
+.blue_block {	
+	height: 770px;
+	width: 100%;
+	background: url(../img/results-bg.jpg);
+	color: #FFF;
+
+	.text_border_block {
+		margin: -32px ;
+		padding: 52px 72px 0 32px;
+		height: 280px;
+		width: 630px;		
+		border:32px solid #F5DB24;
+		transition: 2s;
+		font-size: 32px;
+		text-transform: uppercase;
+		line-height:38px;
+
+		span {
+			font-family: 'Rubik Mono One', sans-serif;
+			word-spacing: -15px;
+			transition: 3s;
+		}
+	}
+
+	.info_block {
+		margin:76px 0 0 56px;
+
+			.ico_1 {
+				margin:0 0 10px -20px;				
+				width: 33px;
+				height: 38px;
+				background: url(../img/sprites.png) -128px -37px;
+			}
+			.ico_2 {
+				margin:0 0 10px -20px;				
+				width: 28px;
+				height: 38px;
+				background: url(../img/sprites.png) -165px -37px;
+			}
+			.ico_3 {
+				margin:0 0 10px -20px;				
+				width: 37px;
+				height: 38px;
+				background: url(../img/sprites.png) -194px -37px;
+			}
+			.ico_4 {
+				margin:0 0 10px -20px;				
+				width: 47px;
+				height: 32px;
+				background: url(../img/sprites.png) -232px -40px;
+			}
+			.ico_5 {
+				margin:0 0 10px -20px;				
+				width: 46px;
+				height: 26px;
+				background: url(../img/sprites.png) 0 -79px;
+			}
+
+			.line-vertical {
+				width: 2px;
+				height: 16px;
+				background: #FFF;
+			}
+			.text {
+				font-size: 15px;
+
+				span {
+					text-transform: uppercase;
+					font-size: 32px;
+
+				}
+			}
+	}
 }

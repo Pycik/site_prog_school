@@ -42,4 +42,18 @@ $(document).ready(function () {
  });
  });
 
+$(document).ready(function() {
+	var block = ".blue_block #border_color";
+	var border_content = ".text_border_block";	
+	var text = ".text_border_block span";
+
+	$(block).hover(function(){
+		$(border_content).css({"border-color" : get_random_color()})
+		$(text).css({"color" : get_random_color()})
+			$(border_content).hover(function() {
+				$(border_content).css({"border-color" : get_random_color()})
+			});
+	});
+});
+
 
