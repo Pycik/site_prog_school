@@ -3,6 +3,11 @@ html,body {
 	padding: 0;
 }
 
+ul {
+	list-style: none;	
+	padding: 0;
+}
+
 .header_box {	
 	width: 100%; 
 	height: 660px;
@@ -749,4 +754,161 @@ html,body {
 				}
 			}
 	}
+}
+
+.how_learning {
+	height:	1275px;
+	width: 100%;
+	background: url(../img/process-bg.jpg);
+	
+
+		.top_text {
+			margin: 40px 0;
+			color: #FFF;
+			font-size: 36px;
+			text-transform: uppercase;
+
+				span {
+					font-family: 'Rubik Mono One', sans-serif;	
+				}
+		}	
+
+		.number {
+
+			color: #FFF;
+			font-size: 240px;
+			font-weight: 900;
+			position: absolute;	
+			left: 0;
+			top: -85px;
+			transition: 5s;
+			
+			
+
+		}
+		.border_block {
+
+			color: #FFF;
+			text-transform:uppercase;
+			position: relative;	
+			margin: 80px 0 180px 40px;
+			height:220px;
+			width: 220px;
+			border: 14px solid #F5DB24;
+			background: url(../img/process-numb-bg.png);
+			transition: 2s;
+			
+			.text {
+
+				padding: 110px 0 0 14px;
+				font-size: 30px;
+				bottom: 0;
+				text-transform:uppercase;
+				font-weight: 700;
+				transition: 3s;
+			}
+
+			.list_item {
+				
+				width: 152px;
+				position: absolute;
+				right: -214px;
+				top: 88px;
+
+				.item_ico {		
+						width: 28px;			
+						height: 26px;						
+						background: url(../img/sprites.png) -4px -109px;
+				}
+
+				.item_ico2 {	
+						width: 19px;				
+						height: 26px;						
+						background: url(../img/sprites.png) -48px -111px;
+				}
+
+				.item_ico3 {
+						width: 23px;					
+						height: 26px;						
+						background: url(../img/sprites.png) -85px -111px;
+				}
+
+				.item_ico4 {
+						width: 26px;					
+						height: 26px;						
+						background: url(../img/sprites.png) -117px -79px;
+				}
+
+
+				.item_ico5 {
+						width: 35px;					
+						height: 26px;						
+						background: url(../img/sprites.png) -48px -79px;
+				}
+
+				.item_ico6 {
+						width: 32px;					
+						height: 26px;						
+						background: url(../img/sprites.png) -83px -81px;
+				}
+
+				.item_ico7 {
+						width: 42px;					
+						height: 26px;						
+						background: url(../img/sprites.png) -147px -79px;
+				}
+
+				.item_ico8 {
+						width: 26px;					
+						height: 26px;						
+						background: url(../img/sprites.png) -117px -109px;	
+				}
+
+				.item_ico9 {
+					width: 26px;					
+					height: 26px;						
+					background: url(../img/sprites.png) -148px -109px;	
+				}
+
+				.item_ico10 {
+					width: 27px;					
+					height: 26px;						
+					background: url(../img/sprites.png) -179px -111px;	
+				}
+
+				.item_ico11 {
+					width: 28px;					
+					height: 26px;						
+					background: url(../img/sprites.png) -208px -109px;
+				}
+
+				.item_ico12 {
+					width: 21px;					
+					height: 26px;						
+					background: url(../img/sprites.png) -239px -111px;	
+				}
+
+				.item_ico13 {
+					width: 18px;					
+					height: 26px;						
+					background: url(../img/sprites.png) -265px -111px;	
+				}
+
+				.item_ico14 {
+					width: 27px;					
+					height: 26px;						
+					background: url(../img/sprites.png) -189px -77px;	
+				}
+
+				.item_text {
+					padding-top: 8px;
+					padding-bottom: 20px;
+				
+				}
+
+			}
+
+		}
+
+
 }

@@ -56,4 +56,20 @@ $(document).ready(function() {
 	});
 });
 
+$(document).ready(function() {
+	var block = ".how_learning .border_block";	
+	var number_color = ".how_learning .number";
+	var text = ".how_learning .text";
+
+	$(block).hover(function(){
+		$(block).css({"border-color" : get_random_color()})
+		$(number_color).css({"color" : get_random_color()})
+		$(text).css({"color" : get_random_color()})
+			$(number_color).hover(function() {
+				$(number_color).css({"color" : get_random_color()})
+			});
+	});
+});
+
+
 
