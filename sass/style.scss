@@ -241,6 +241,7 @@ ul {
 	width: 726px;
 	height: 210px;
 	background: #F5DB24;
+
 }
 
 .right_form {
@@ -923,7 +924,7 @@ ul {
 	
 	.red_block {
 
-		margin-left: -26px;		
+		margin:-60px 0 0 0;			
 		height: 234px;
 		width: 690px;
 		background: #E5544D;
@@ -931,6 +932,7 @@ ul {
 		font-size: 36px;
 		position: relative;
 		text-transform: uppercase;
+		
 
 		.content {
 
@@ -974,7 +976,20 @@ ul {
 			}
 		}
 	}
- 
+
+	.red_block:before {
+		height: 234px;
+		width: 100%;
+		background: #E5544D;		
+		content:"";
+		position:absolute;		
+		right: 450px;
+		
+	}
+ 	
+ 	.right_form {
+ 		float: right;
+ 	}
  	.send_form {
  		position: absolute;
  		top:20px;
@@ -983,7 +998,7 @@ ul {
 }
 
 .price_course {
-	min-height: 1000px;
+	height: 2060px;
 	background: #AFAFAF;
 
 
@@ -1000,12 +1015,14 @@ ul {
 
 	.main_content {
 		padding-left: 40px;
+
 		.border_content {
 
 			padding: 18px 14px 0 14px;
 			height: 383px;
 			width:286px;
 			border: 20px solid #F5DB24;
+			transition: 3s;
 
 
 		.border_text {
@@ -1107,5 +1124,106 @@ ul {
 
 		}
 	}
+	.border_online {
+		position: relative;
+
+		.pay_online {
+			position:absolute;
+			top: -80px;
+			left: 16px;
+			font-size: 18px;
+			border: 8px solid #F5DB24;
+			background:  #F5DB24; 
+			text-transform: uppercase;
+			width: 290px;
+			height: 69px;
+			text-align: center;
+			padding-top: 14px;
+			transition: 3s;
+
+			a {					
+				transition: 2s;
+				color: #111;
+				text-decoration:none;
+				padding: 16px 46px 17px 50px;
+			}
+
+		}			
+
+	}
+	.btn {
+		width: 290px;
+		height: 69px;
+		margin-top: 20px;
+		padding-top: 10px;
+		font-size: 30px;
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+}
+
+.pay_3_courses {
+	height: 480px;
+	width: 100%;
+	background: url(../img/action-bg.jpg);	
+
+	.inside_block {
+		height: 480px;
+		width: 100%;
+		background: url(../img/java-action-bg.png);		
+	}
+
+	.main_content {	
+		margin-top: -34px;
+		width: 655px;
+		height: 255px;	
+		border: 34px solid #F5DB24; 
+		color: #FFF;
+		position: relative;
+		transition: 3s;
+
+
+		.top_text {
+			font-size: 40px;
+			text-transform: uppercase;
+			padding: 20px 0 0 40px;
+			line-height: 38px;
+
+
+			span {
+				font-weight: 900;
+			}
+		}
+
+		.bottom_text {
+			font-size: 70px;
+			text-transform: uppercase;
+			font-weight: 900;
+			position: absolute;
+			bottom: 0;
+			right: -180px;
+			transition: 4s;
+		}
+	}
+
+	.middle_content {
+		color: #FFF;		
+		font-size: 36px;
+		text-transform: uppercase;
+		font-weight: 900;	
+		margin-left: 50px;			
+		padding: 26px 0 56px 0;
+	}
+			
+	.btn_write_courses {
+		width:436px;
+		height:70px;
+		padding-top: 12px;
+		font-size: 28px;
+		text-transform: uppercase;
+		font-weight: 900;
+
+	}
+		
 
 }

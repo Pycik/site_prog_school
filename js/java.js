@@ -73,3 +73,45 @@ $(document).ready(function() {
 
 
 
+$(document).ready(function() {
+	var border_color = $(".border_content");
+	var btn_color = $(".pay_online");
+	var btn_text_color = $(".pay_online a");
+
+	$(border_color).hover(function(){
+		$(this).css({"border-color" : get_random_color()})
+	});
+	$(btn_color).hover(function(){
+		$(this).css({"border-color" : get_random_color(),
+					 "background-color" : get_random_color()					 
+					})
+	});
+	$(btn_text_color).hover(function(){
+		$(this).css({"color" : get_random_color()})
+	});
+
+});
+
+$(document).ready(function(){
+	var border_color = $(".pay_3_courses .main_content");
+	var price_color = $(".pay_3_courses .main_content .bottom_text")
+
+	$(border_color).hover(function(){
+		$(this).css({"border-color" : get_random_color()})
+	});
+	$(border_color).hover(function(){
+		$(price_color).css({"color" : get_random_color()})
+	});
+});
+
+
+// $(document).ready(function() {
+// 	var border_color = $(".pay_3_courses .main_content");
+
+
+// 	$(border_color).hover(function(){
+// 		$(this).css({"border-color" : get_random_color()})
+// 	});
+
+
+// });
