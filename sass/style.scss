@@ -1227,3 +1227,327 @@ ul {
 		
 
 }
+
+.open_course {
+	height: 696px;
+	width:100%;
+	background: url(../img/results-bg.jpg);
+	color:#FFF;
+
+	.text_border_block {
+		margin: -32px 0 0 40px;
+		padding: 36px 72px 0 10px;
+		height: 210px;
+		width: 630px;		
+		border:32px solid #F5DB24;	
+		font-size: 36px;
+		text-transform: uppercase;
+		line-height:38px;
+		letter-spacing: 2px;
+		transition: 2s;
+		background: url(../img/java-action-bg.png);
+
+		span {
+			font-weight:900;
+			transition: 3s;
+		}
+	}
+
+	.grafik_days {
+		padding-top: 40px;		
+
+		.top_text{
+			font-size:24px;
+			text-transform:uppercase;
+			font-weight: 900;
+		}
+
+		.days_times {
+			padding-left: 80px;			
+			font-size: 16px;				
+			position:relative;	
+
+			.item_1,.item_2 {
+				padding-top: 12px;
+			}	
+
+			.item_1:before {
+				margin: 4px 0 0 -20px;
+				content: "";
+				position:absolute;
+				width:11px;
+				height:11px;
+				background: url(../img/sprites.png) -222px -91px;	
+			}
+
+				.item_2:before {
+					margin: 4px 0 0 -20px;
+					content: "";
+					position:absolute;
+					width:11px;
+					height:11px;
+					background: url(../img/sprites.png) -223px -77px;		
+
+			}
+		}
+	}
+
+	.btn_send {
+		margin-top: 30px;
+		padding-top: 12px;
+		width:446px;
+		height:70px;
+		font-size: 26px;
+		text-transform: uppercase;
+		font-weight:900;
+	}
+}
+
+.students_clients {
+	height: 612px;
+	width: 100%;
+
+	.students {		
+		width: 100%;
+		height: 644px;
+		background: #F5DB24;
+		margin-top: -32px;
+		font-size: 36px;
+		text-transform: uppercase;
+
+		.items_icons {
+			margin-top: 32px;	
+
+			img {
+				padding: 10px 5px;
+			}		
+		}
+
+		
+	}	
+	.students_text {
+		padding-top:90px;
+	}
+	.clients_text {
+		padding: 59px 0 0 40px;
+	}
+
+	.text {
+		line-height: 36px;
+		font-size: 36px;
+		text-transform: uppercase;
+
+		span {
+			font-weight: 900;
+		}
+	}
+	
+	.students:before {
+		content: "";
+		position: absolute;
+		background: #F5DB24;
+		height: 644px;	
+		width: 100%;			
+		right:100%;
+		margin-right:-15px;
+	}
+
+	.clients {		
+
+		.items_icons {
+			margin: 46px 0 0 40px;
+			width: 475px;
+
+			img {
+				padding: 0 65px 40px 0;
+			}
+		}
+	}
+
+}
+
+.free_block {
+	height: 530px;
+	width: 100%;
+	background: #1D1D29;
+
+	.images {
+		height:100%;
+		background: url(../img/java-action-bg.png);
+
+		.text {
+			margin: 36px 0 0 20px;
+			color: #FFF;
+			font-size: 36px;
+			text-transform: uppercase;
+			word-spacing: 10px;
+
+			span {
+				font-weight: 900;
+			}
+		}
+
+		.number {			
+			height:148px;
+			width:360px;
+			position:relative;
+			margin-top: 50px;
+
+
+			.text {
+				font-size:12px;
+				width: 230px;
+				position: absolute;
+				bottom:0;
+				right: -25px;
+			}
+
+		}
+		.number.number_5{
+			background: url(../img/discount-1.png) no-repeat;
+		}
+		.number.number_7{
+			background: url(../img/discount-2.png) no-repeat;
+		}
+
+		.free {
+			background: url(../img/discount-5.png) no-repeat; 
+			height:143px;
+			width:100%;
+			margin-top:50px;
+			position: relative;
+
+			.text {	
+				width:670px;
+				margin:0;			
+				position: absolute;
+				bottom:0;
+				right: 90px; 				
+				line-height:38px;
+				word-spacing: -5px;
+				
+			}
+
+		}
+	}
+}
+
+.speak_about_us {
+	min-height: 520px;
+
+	.top_text {
+		margin-top: 50px;
+		font-size: 36px;
+		text-transform: uppercase;
+		line-height: 36px;
+
+		span {
+			font-weight:900;
+		}
+	}
+	
+	.image {
+			margin-top: 40px;			
+			height:230px;
+			width:230px;
+			
+			float:left;
+			display: inline-block;
+
+			.image_first {
+				height:100%;
+				width:100%;
+				background: url(../img/rew-5.jpg);
+			}
+
+			.image_second {
+				height:100%;
+				width:100%;
+				background: url(../img/rew-1.jpg);
+				display:none;
+			}
+			.image_third {
+				height:100%;
+				width:100%;
+				background: url(../img/rew-2.jpg);
+				display:none;
+			}
+			.image_fourth {
+				height:100%;
+				width:100%;
+				background: url(../img/rew-3.jpg);
+				display:none;
+			}
+		}
+
+	.main_content {
+		margin:40px 0 0 0px;	
+		width:100%;
+		padding-left: 250px;		
+			
+			.icons_pages {
+				width: 90px;
+				height: 40px;
+				margin-bottom: 25px;
+
+				.prev_btn,.next_btn {
+					height:38px;
+					width:38px;
+					border: 3px solid #F5DB24;
+					display: inline-block;
+					margin-right: 5px;
+					transition: 1s;
+
+					.ico_btn {	
+						font-weight: 900;
+						margin-top: -4px;
+
+					}					
+				}
+
+				.prev_btn:hover,.next_btn:hover{
+					background: #F5DB24;
+				}
+			}
+		.icons_start_text {
+			height:80px;
+			width:100%;
+			background: url(../img/quote-icon.png) no-repeat; 
+		}
+
+		.text_students {
+
+			p {
+				padding-bottom: 20px;
+			}
+			span {
+				color: #E5544D;
+				font-weight:900;
+				margin-top: 40px;
+			}
+
+			.silver {
+				color: silver;
+			}
+
+			.text_dou {
+				margin-top: 40px;
+			}
+
+			.second_text {
+				display:none;
+			}
+			.third_text {
+				display:none;
+			}
+			.fourth_text {
+				display:none;
+			}
+
+
+		}
+
+		
+	}
+	
+}

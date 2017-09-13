@@ -81,11 +81,13 @@ $(document).ready(function() {
 	$(border_color).hover(function(){
 		$(this).css({"border-color" : get_random_color()})
 	});
+	
 	$(btn_color).hover(function(){
 		$(this).css({"border-color" : get_random_color(),
 					 "background-color" : get_random_color()					 
 					})
 	});
+
 	$(btn_text_color).hover(function(){
 		$(this).css({"color" : get_random_color()})
 	});
@@ -99,19 +101,76 @@ $(document).ready(function(){
 	$(border_color).hover(function(){
 		$(this).css({"border-color" : get_random_color()})
 	});
+
 	$(border_color).hover(function(){
 		$(price_color).css({"color" : get_random_color()})
 	});
 });
 
 
-// $(document).ready(function() {
-// 	var border_color = $(".pay_3_courses .main_content");
+$(document).ready(function(){	
+	var block = $(".open_course");	
+	var border_color = $(".open_course .text_border_block");
+
+	$(block).hover(function(){
+		$(border_color).css({"border-color" : get_random_color()})
+	});
+
+	$(border_color).hover(function(){
+		$(this).css({"border-color" : get_random_color()})
+	});
+	
+});
 
 
-// 	$(border_color).hover(function(){
-// 		$(this).css({"border-color" : get_random_color()})
-// 	});
+$(document).ready(function(){	
+	var first_text = $(".speak_about_us .first_text");	
+	var image_first = $(".speak_about_us .image_first");
+	var second_text = $(".speak_about_us .second_text");	
+	var image_second = $(".speak_about_us .image_second");
+	var third_text = $(".speak_about_us .third_text");	
+	var image_third = $(".speak_about_us .image_third");
+	var fourth_text = $(".speak_about_us .fourth_text");	
+	var image_fourth = $(".speak_about_us .image_fourth");
+
+	var next_btn = $(".speak_about_us .next_btn");
 
 
-// });
+	// $(second_text).hide();
+	// $(image_second).hide();
+
+
+	$(next_btn).click(function(){
+		$(image_first).toggle();
+		$(first_text).toggle();
+		$(image_second).toggle();	
+		$(second_text).toggle();
+
+		$(next_btn).click(function(){				
+			$(image_third).toggle();	
+			$(third_text).toggle();	
+			$(image_first).toggle();
+			$(first_text).toggle();
+
+		});	
+
+		
+	});
+
+
+
+		
+
+
+
+	// $(next_btn).click(function(){
+	// 	$(first_text).hide();
+	// 	$(image_first).hide();
+	// 	$(second_text).show();
+	// 	$(image_second).show();
+	// });
+
+	
+});
+
+
