@@ -1435,6 +1435,13 @@ ul {
 .speak_about_us {
 	min-height: 520px;
 
+	.display_none {
+		display:none;
+	}
+	.display_block {
+		display:block;
+	}
+
 	.top_text {
 		margin-top: 50px;
 		font-size: 36px;
@@ -1478,6 +1485,18 @@ ul {
 				background: url(../img/rew-3.jpg);
 				display:none;
 			}
+			.image_fiveth {
+				height:100%;
+				width:100%;
+				background: url(../img/rew-4.jpg);
+				display:none;
+			}
+			.image_sixth {
+				height:100%;
+				width:100%;
+				background: url(../img/rew-6.jpg);
+				display:none;
+			}
 		}
 
 	.main_content {
@@ -1497,6 +1516,16 @@ ul {
 					display: inline-block;
 					margin-right: 5px;
 					transition: 1s;
+
+					.not_work {
+						height:50px;
+						width:400px;
+						color: red;
+						font-size: 20px;
+						font-weight:900;
+						background:pink;
+						display:none;
+					}
 
 					.ico_btn {	
 						font-weight: 900;
@@ -1533,21 +1562,125 @@ ul {
 			.text_dou {
 				margin-top: 40px;
 			}
-
+			
 			.second_text {
-				display:none;
+				display: none;
 			}
 			.third_text {
-				display:none;
+				display: none;
 			}
 			.fourth_text {
-				display:none;
+				display: none;
 			}
-
-
+			.fiveth_text {
+				display: none;
+			}
+			.sixth_text {
+				display: none;
+			}
 		}
 
 		
 	}
 	
+}
+
+.answers {
+	height: 680px;
+	width:100%;	
+	background: url(../img/results-bg.jpg);
+	position:relative;
+
+
+		.answer {
+			position: absolute;
+			width: 600px;
+			background: #FFF;
+			padding: 10px 20px;
+			top:25%;
+			left: 25%;
+			z-index: 1;
+			font-size: 16px;
+			
+			.first {				
+				margin: -10px -20px;
+				padding: 20px 20px 20px 120px;
+				background: #F5DB24;
+			}
+			.second {
+				margin: 40px 20px;
+			}
+			
+		}
+
+	.text_top {
+		margin: 60px 0 30px 0;
+		color: #FFF;
+		font-size: 36px;
+		text-transform: uppercase;
+
+
+		span {
+			font-weight: 900;
+		}
+	}
+
+	.answers_text {
+
+		li:before {
+			content: "";
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			top:-3px;
+			left:-5px;			
+			border:5px solid #F5DB24;
+
+		
+		}
+
+		li {
+
+			height: 35px;
+			position: relative;
+			padding: 0 0 70px 50px;
+			line-height: 15px;
+			
+
+
+		span {
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			margin-left:-50px;
+			padding: 8px 0 0 3px;
+			
+
+		}
+
+
+		p {		
+
+			font-size: 16px;
+			color:#FFF;
+			transition: 1s;	
+
+		}
+		
+		p:hover{			
+			text-decoration: none;		
+			cursor:pointer;	
+		}
+
+		}
+		li:hover p{
+			color: #111;
+		}
+
+		
+
+
+	}
+
+
 }

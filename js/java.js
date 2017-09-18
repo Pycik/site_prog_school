@@ -123,6 +123,8 @@ $(document).ready(function(){
 });
 
 
+// ************* Говнокод без цыкла по кругу ************** ( сюда еще вернемся )
+
 $(document).ready(function(){	
 	var first_text = $(".speak_about_us .first_text");	
 	var image_first = $(".speak_about_us .image_first");
@@ -132,45 +134,128 @@ $(document).ready(function(){
 	var image_third = $(".speak_about_us .image_third");
 	var fourth_text = $(".speak_about_us .fourth_text");	
 	var image_fourth = $(".speak_about_us .image_fourth");
+	var fiveth_text = $(".speak_about_us .fiveth_text");	
+	var image_fiveth = $(".speak_about_us .image_fiveth");
 
 	var next_btn = $(".speak_about_us .next_btn");
+	var prev_btn = $(".speak_about_us .prev_btn");
 
-
-	// $(second_text).hide();
-	// $(image_second).hide();
 
 
 	$(next_btn).click(function(){
-		$(image_first).toggle();
-		$(first_text).toggle();
-		$(image_second).toggle();	
-		$(second_text).toggle();
+		$(first_text).hide().next().show();
+		$(image_first).hide().next().show();
 
-		$(next_btn).click(function(){				
-			$(image_third).toggle();	
-			$(third_text).toggle();	
-			$(image_first).toggle();
-			$(first_text).toggle();
+		$(".not_work").hide();
 
-		});	
+		$(next_btn).click(function(){
+			$(second_text).hide().next().show();
+			$(image_second).hide().next().show();
 
-		
+			$(next_btn).click(function(){
+				$(third_text).hide().next().show();
+				$(image_third).hide().next().show();
+
+				$(next_btn).click(function(){
+					$(fourth_text).hide().next().show();
+					$(image_fourth).hide().next().show();
+					
+					$(next_btn).click(function(){
+						$(fiveth_text).hide().next().show();
+						$(image_fiveth).hide().next().show();
+				
+					});
+				});
+			});
+		});
+	
 	});
 
 
-
-		
-
-
-
-	// $(next_btn).click(function(){
-	// 	$(first_text).hide();
-	// 	$(image_first).hide();
-	// 	$(second_text).show();
-	// 	$(image_second).show();
-	// });
-
-	
+	$(prev_btn).click(function(){
+		$(this).hide();
+		$(".not_work").show();
+	});
 });
+
+// **********  Конец Говнокода  ******************
+
+
+
+function get_answer() {
+
+	var arr = ['.answer1','.answer2','.answer3','.answer4','.answer5'];
+
+	 for (var i = 0; i < arr.lenght; i++ ) {
+ 	 	arr = arr.lenght[i];       
+    }
+
+   return arr;
+   
+
+}
+
+$(document).ready(function() {
+	$(".answer").hide();
+
+	$(".answers_text li").click(function() {
+
+		if (get_answer.is(":hidden")) {
+		answer.slideDown();
+		} else {
+		get_answer.slideUp()
+			}
+        
+	});
+
+});
+	
+
+
+
+
+// $(document).ready(function() {
+		
+// $(".answer_block h1").each(function(i) {
+// 	var answer = $(".answer_block h1").next(".answer");
+	
+// 		if (answer.is(":hidden")) {
+// 			answer.slideDown();
+// 		} else {
+// 			answer.slideUp()
+// 		}
+// }); 
+
+
+// 	$(".answer").hide();	
+
+// $(".answers_text li").click(function() {
+    
+
+		  
+//     });
+  
+
+// }); 
+
+
+// $(document).ready(function(){	
+
+// 	$(".answer").hide();
+
+// 	$(".answers_text li").click(function(){
+// 		var answer = $(".answer_block h1").next(".answer");
+
+
+// 		if (answer.is(":hidden")) {
+// 			answer.slideDown();
+// 		} else {
+// 			answer.slideUp()
+// 		}
+// 	});
+	
+// });
+
+
 
 
