@@ -125,137 +125,246 @@ $(document).ready(function(){
 
 // ************* Говнокод без цыкла по кругу ************** ( сюда еще вернемся )
 
-$(document).ready(function(){	
-	var first_text = $(".speak_about_us .first_text");	
-	var image_first = $(".speak_about_us .image_first");
-	var second_text = $(".speak_about_us .second_text");	
-	var image_second = $(".speak_about_us .image_second");
-	var third_text = $(".speak_about_us .third_text");	
-	var image_third = $(".speak_about_us .image_third");
-	var fourth_text = $(".speak_about_us .fourth_text");	
-	var image_fourth = $(".speak_about_us .image_fourth");
-	var fiveth_text = $(".speak_about_us .fiveth_text");	
-	var image_fiveth = $(".speak_about_us .image_fiveth");
+// $(document).ready(function(){	
+// 	var first_text = $(".speak_about_us .first_text");	
+// 	var image_first = $(".speak_about_us .image_first");
+// 	var second_text = $(".speak_about_us .second_text");	
+// 	var image_second = $(".speak_about_us .image_second");
+// 	var third_text = $(".speak_about_us .third_text");	
+// 	var image_third = $(".speak_about_us .image_third");
+// 	var fourth_text = $(".speak_about_us .fourth_text");	
+// 	var image_fourth = $(".speak_about_us .image_fourth");
+// 	var fiveth_text = $(".speak_about_us .fiveth_text");	
+// 	var image_fiveth = $(".speak_about_us .image_fiveth");
 
-	var next_btn = $(".speak_about_us .next_btn");
-	var prev_btn = $(".speak_about_us .prev_btn");
+// 	var next_btn = $(".speak_about_us .next_btn");
+// 	var prev_btn = $(".speak_about_us .prev_btn");
 
 
 
-	$(next_btn).click(function(){
-		$(first_text).hide().next().show();
-		$(image_first).hide().next().show();
+// 	$(next_btn).click(function(){
+// 		$(first_text).hide().next().show();
+// 		$(image_first).hide().next().show();
 
-		$(".not_work").hide();
+// 		$(".not_work").hide();
 
-		$(next_btn).click(function(){
-			$(second_text).hide().next().show();
-			$(image_second).hide().next().show();
+// 		$(next_btn).click(function(){
+// 			$(second_text).hide().next().show();
+// 			$(image_second).hide().next().show();
 
-			$(next_btn).click(function(){
-				$(third_text).hide().next().show();
-				$(image_third).hide().next().show();
+// 			$(next_btn).click(function(){
+// 				$(third_text).hide().next().show();
+// 				$(image_third).hide().next().show();
 
-				$(next_btn).click(function(){
-					$(fourth_text).hide().next().show();
-					$(image_fourth).hide().next().show();
+// 				$(next_btn).click(function(){
+// 					$(fourth_text).hide().next().show();
+// 					$(image_fourth).hide().next().show();
 					
-					$(next_btn).click(function(){
-						$(fiveth_text).hide().next().show();
-						$(image_fiveth).hide().next().show();
+// 					$(next_btn).click(function(){
+// 						$(fiveth_text).hide().next().show();
+// 						$(image_fiveth).hide().next().show();
 				
-					});
-				});
-			});
-		});
+// 					});
+// 				});
+// 			});
+// 		});
 	
-	});
+// 	});
 
 
-	$(prev_btn).click(function(){
-		$(this).hide();
-		$(".not_work").show();
-	});
-});
+// 	$(prev_btn).click(function(){
+// 		$(this).hide();
+// 		$(".not_work").show();
+// 	});
+// });
 
 // **********  Конец Говнокода  ******************
 
+$(document).ready(function(){
 
 
-function get_answer() {
+  $(".slide").bxSlider({
+  	nextSelector: '.next_btn',
+  	prevSelector: '.prev_btn',
+  	nextText: '',
+  	prevText: '',
+  	mode: 'fade',
+  	captions: true, 
+  });  
 
-	var arr = ['.answer1','.answer2','.answer3','.answer4','.answer5'];
 
-	 for (var i = 0; i < arr.lenght; i++ ) {
- 	 	arr = arr.lenght[i];       
-    }
-
-   return arr;
-   
-
-}
-
-$(document).ready(function() {
-	$(".answer").hide();
-
-	$(".answers_text li").click(function() {
-
-		if (get_answer.is(":hidden")) {
-		answer.slideDown();
-		} else {
-		get_answer.slideUp()
-			}
-        
-	});
-
+ $(".bx-wrapper").css({"webkitboxshadow" : "none",
+ 						"box-shadow" : "none",
+ 						"border:" : "none",
+ 						 });
+  $(".bx-controls.bx-has-pager").remove();
 });
-	
-
-
-
-
-// $(document).ready(function() {
-		
-// $(".answer_block h1").each(function(i) {
-// 	var answer = $(".answer_block h1").next(".answer");
-	
-// 		if (answer.is(":hidden")) {
-// 			answer.slideDown();
-// 		} else {
-// 			answer.slideUp()
-// 		}
-// }); 
-
-
-// 	$(".answer").hide();	
-
-// $(".answers_text li").click(function() {
+   
     
 
-		  
-//     });
-  
-
-// }); 
-
-
-// $(document).ready(function(){	
-
-// 	$(".answer").hide();
-
-// 	$(".answers_text li").click(function(){
-// 		var answer = $(".answer_block h1").next(".answer");
-
-
-// 		if (answer.is(":hidden")) {
-// 			answer.slideDown();
-// 		} else {
-// 			answer.slideUp()
-// 		}
-// 	});
+$(document).ready(function(){
 	
-// });
+
+	$(".answers_text").on("click",".qw",function(){
+		$(this).closest(".wrapp").removeClass("hiddens");
+		$(".answer").on("click",function(){
+			$(".wrapp").addClass("hiddens");
+		});		
+}); 
+
+});
+
+
+   //  ************ start google maps *************
+function initialize() {
+ var latlng = new google.maps.LatLng(50.438913, 30.512551);
+ var settings = {
+ zoom: 15,
+ center: latlng,
+ mapTypeControl: true,
+ mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+ navigationControl: true,
+ navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+ mapTypeId: google.maps.MapTypeId.ROADMAP
+ };
+
+ var map = new google.maps.Map(document.getElementById("map_canvas"), 
+settings);
 
 
 
+// создаем маркер на карте
+
+var companyLogo = new google.maps.MarkerImage('img/logo1.png',
+new google.maps.Size(150,50),
+new google.maps.Point(0,0),
+new google.maps.Point(50,50)
+);
+
+
+var companyPos = new google.maps.LatLng(50.438913, 30.512551);
+var companyMarker = new google.maps.Marker({
+position: companyPos,
+map: map,
+icon: companyLogo,
+title:"Prog Kiev",
+});
+
+
+var companyLogo = new google.maps.MarkerImage('img/logo1.png',
+new google.maps.Size(150,50),
+new google.maps.Point(0,0),
+new google.maps.Point(50,50)
+);
+
+
+var companyPos = new google.maps.LatLng(50.452884, 30.446052);
+var companyMarker = new google.maps.Marker({
+position: companyPos,
+map: map,
+icon: companyLogo,
+title:"Prog Kiev",
+});
+
+
+var companyLogo = new google.maps.MarkerImage('img/logo1.png',
+new google.maps.Size(150,50),
+new google.maps.Point(0,0),
+new google.maps.Point(50,50)
+);
+
+
+var companyPos = new google.maps.LatLng(50.435685, 30.513943);
+var companyMarker = new google.maps.Marker({
+position: companyPos,
+map: map,
+icon: companyLogo,
+title:"Prog Kiev",
+});
+
+var companyLogo = new google.maps.MarkerImage('img/logo1.png',
+new google.maps.Size(150,50),
+new google.maps.Point(0,0),
+new google.maps.Point(50,50)
+);
+
+
+var companyPos = new google.maps.LatLng(50.436463, 30.518036);
+var companyMarker = new google.maps.Marker({
+position: companyPos,
+map: map,
+icon: companyLogo,
+title:"Prog Kiev",
+});
+
+var companyLogo = new google.maps.MarkerImage('img/logo1.png',
+new google.maps.Size(150,50),
+new google.maps.Point(0,0),
+new google.maps.Point(50,50)
+);
+
+
+var companyPos = new google.maps.LatLng(50.458462, 30.429749);
+var companyMarker = new google.maps.Marker({
+position: companyPos,
+map: map,
+icon: companyLogo,
+title:"Prog Kiev",
+});
+
+ }
+
+ //  ************ end google maps *************
+
+
+$(document).ready(function(){
+	
+	$(".map").onload(initialize());
+
+});
+
+$(document).ready(function(){
+
+	$(".link1").click(function(){		
+		$("html,body").animate({
+			scrollTop:$(".main_center_block_info").offset().top 
+		},1000);
+	});
+
+	$(".learn").click(function(){		
+		$("html,body").animate({
+			scrollTop:$(".blue_block").offset().top 
+		},1500);
+	});
+
+	$(".price").click(function(){		
+		$("html,body").animate({
+			scrollTop:$(".price_course").offset().top 
+		},1500);
+	});
+
+	$(".start").click(function(){		
+		$("html,body").animate({
+			scrollTop:$(".open_course").offset().top 
+		},1500);
+	});
+
+	$(".contacts").click(function(){		
+		$("html,body").animate({
+			scrollTop:$(".search_us").offset().top 
+		},1500);
+	});
+
+	$(".btn.up").click(function(){		
+		$("html,body").animate({
+			scrollTop:$(".header_box").offset().top 
+		},1500);
+	});
+
+
+
+
+
+
+});
 
